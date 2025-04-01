@@ -1,0 +1,75 @@
+/* 기본 레이아웃 스타일 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #ffe6f0, #ffd6f9);
+    overflow-x: hidden;
+    position: relative;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 30px 20px;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    color: #ff69b4;
+    text-shadow: 2px 2px #fff0f5;
+    margin-bottom: 20px;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .video-section h2 {
+    font-size: 2rem;
+    color: #ff8ac6;
+    margin-bottom: 10px;
+  }
+  
+  .video-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  footer {
+    margin-top: 40px;
+    font-size: 1rem;
+    color: #d15fa3;
+  }
+  
+  /* 귀여운 이모티콘이 떠다니는 애니메이션 */
+  .emoji {
+    position: absolute;
+    font-size: 2rem;
+    animation: floatEmoji 10s infinite linear;
+    pointer-events: none;
+  }
+  
+  @keyframes floatEmoji {
+    0% {
+      transform: translateY(100vh) rotate(0deg);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-10vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
